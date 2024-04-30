@@ -89,7 +89,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public boolean findById(Integer id) {
-        return userRepo.findById(id).isPresent();
+        return userRepo.findById(id).isPresent();   //get by id and delete needs id as input so checking if id is in db or not../isPresent
     }
     
     
