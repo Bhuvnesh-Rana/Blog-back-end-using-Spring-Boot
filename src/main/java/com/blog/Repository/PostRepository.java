@@ -13,5 +13,6 @@ public interface PostRepository extends JpaRepository<Post, Integer> {
     List<Post> findByCategory(Category category);
     List<Post> findByUser(User user);
     Post findByTitle(String Title);
-    List<Post> findByTitleContaining(String title);
+    List<Post> findByTitleContaining(String title);     //Search
+    // boolean existByTitle(String title);    to check if title already exist in db // have not implemented yet in srvc and ctroller. 
 }
